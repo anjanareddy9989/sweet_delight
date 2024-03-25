@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <style>
+        :root {
+            --primary-color: #C8A2C8; /* Lilac */
+            --text-color: #564787; /* Deep Lilac */
+            --background-color: #F3EAF8; /* Light Pastel Lilac */
+        }
+
+        body {
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+
+        a, h2, h4 {
+            color: var(--primary-color);
+        }
+
+        nav ul li a {
+            color: var(--text-color);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .grid img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 10px;
+            margin: auto;
+        }
+
+        .grid div {
+            text-align: center;
+        }
+    </style>
+    <title>French Bakery in Bangalore</title>
+</head>
+<body>
+    <nav class="container-fluid">
+        <ul>
+            <li><strong>Welcome to Our French Bakery</strong></li>
+        </ul>
+        <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#events">Special Events</a></li>
+            <li><a href="#location">Location & Hours</a></li>
+            <li><a href="#contact" role="button">Contact</a></li>
+        </ul>
+    </nav>
+    <main class="container">
+        <section id="welcome">
+            <h2>Welcome to Our Bakery</h2>
+            <p>Your slice of Paris in Bangalore, where every bite is a story.</p>
+            <img src="https://source.unsplash.com/featured/?parisian,cafe" alt="Welcome to Our Bakery" style="border-radius: 10px;">
+        </section>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>In 2023, we embarked on a journey to bring the essence of Parisian baking to the heart of Bangalore. Our French bakery, adorned in pastel and lilac hues, offers an array of delicious pastries, with a special focus on our signature macarons. Amidst the vibrant neighborhoods of Bangalore, we invite you to a cozy escape where delightful drinks, exquisite pastries, and the charm of Paris await. Join us for live music evenings and special weekend high teas, designed for the young, working crowd seeking a unique experience.</p>
+            <img src="https://source.unsplash.com/featured/?parisianbakery" alt="Our Story" style="border-radius: 10px;">
+        </section>
+        <section id="menu">
+            <h2>Our Menu</h2>
+            <div class="grid">
+                <div>
+                    <img src="https://source.unsplash.com/featured/?clafoutis" alt="Clafoutis" style="border-radius: 10px;">
+                    <h4>Clafoutis</h4>
+                    <p>A traditional French dessert with black cherries in a custard-like batter.</p>
+                </div>
+                <!-- Additional items with their images and descriptions -->
+            </div>
+        </section>
+        <section id="events">
+            <h2>Special Events</h2>
+            <p>Experience the charm of Paris with our live music evenings and special weekend high teas.</p>
+            <img src="https://source.unsplash.com/featured/?bakery,event" alt="Special Events" style="border-radius: 10px;">
+        </section>
+        <section id="location">
+            <h2>Location & Hours</h2>
+            <p>Located in the heart of Bangalore, we're bringing a touch of Paris to your doorstep. Open daily from 10 AM to 11 PM.</p>
+            <img src="https://source.unsplash.com/featured/?bakery,location" alt="Location & Hours" style="border-radius: 10px;">
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Reach out for any queries or to share your experiences. We love hearing from our patrons.</p>
+            <p><strong>Phone:</strong> <a href="tel:+1234567890">+1234567890</a>, <a href="tel:+0987654321">+0987654321</a></p>
+            <img src="https://source.unsplash.com/featured/?contact,form" alt="Contact Us" style="border-radius: 10px;">
+        </section>
+    </main>
+    <footer class="container">
+        <small>
+            <a href="#contact">Contact Us</a> • <a href="https://www.instagram.com">Instagram</a>
+        </small>
+    </footer>
+</body>
+</html>
